@@ -12,7 +12,6 @@ const app = {
                 if (targetModale.style.display === 'block') {
                     targetModale.style.display = 'none';
                 } else {
-
                     modales.forEach(modale => {
                         modale.style.display = 'none';
                     });
