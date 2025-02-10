@@ -37,3 +37,25 @@ img {
 p {
     margin-top: 0px;
 }
+
+.container--notepad {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.container--notepad img {
+    width: 600px;
+    height: auto;
+}
+
+.container--notepad-text {
+    position: absolute;
+    top: 5em;
+    left: 4em;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 12px;
+}
