@@ -4,12 +4,28 @@ const app = {
     },
     liOnClick: function () {
         const listItems = document.querySelectorAll('.ul--li');
-        listItems.forEach((item) => {
-            item.onclick = () => {
-                console.log(`Vous avez cliqué sur : ${item.querySelector('p').textContent}`);
-            };
+        const modales = document.querySelectorAll('.container--notepad');
+        listItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const targetId = item.getAttribute('data-target');
+                const targetModale = document.getElementById(targetId);
+                if (targetModale.style.display === 'block') {
+                    targetModale.style.display = 'none';
+                } else {
+
+                    modales.forEach(modale => {
+                        modale.style.display = 'none';
+                    });
+                    if (targetModale) {
+                        targetModale.style.display = 'block';
+                    }
+                }
+            });
         });
     }
 };
-document.addEventListener('DOMContentLoaded', app.liOnClick);
-document.addEventListener('DOMContentLoaded', app.init);
+
+document.addEventListener('DOMContentLoaded', function () {
+    app.init();
+    app.liOnClick();
+});

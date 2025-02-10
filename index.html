@@ -14,23 +14,61 @@
 
 <body>
     <ul>
-        <li class="ul--li">
+        <li class="ul--li" data-target="presentation">
             <img src="./images/tumblr_091435cda9870d6e97ba9a29dfbb5683_bfe2d0fd_540.png" alt="Photo d'un .txt sous xp">
             <p> Presentation.txt</p>
         </li>
-        <li class="ul--li">
+        <li class="ul--li" data-target="technologie">
             <img src="./images/tumblr_091435cda9870d6e97ba9a29dfbb5683_bfe2d0fd_540.png" alt="Photo d'un .txt sous xp">
             <p> Technologie.txt</p>
         </li>
-        <li class="ul--li">
+        <li class="ul--li" data-target="projet">
             <img src="./images/tumblr_091435cda9870d6e97ba9a29dfbb5683_bfe2d0fd_540.png" alt="Photo d'un .txt sous xp">
             <p> Projet.txt</p>
         </li>
     </ul>
-    <div class="container--notepad">
+    <!-- Modales for the notepad  -->
+    <div class="container--notepad" id="presentation">
         <img src="./images/notepad.png" alt="Bloc note">
-        <div class="container--notepad-text">Je suis le texte</div>
+        <div class="container--notepad-text">Bonjours je suis Quentin Cas jeune developpeur de 27 ans.<br>
+            Issue d'un parcours de reorientation je sors d'une DWWM et je suis actuellement en CDA chez human<br>
+            booster
+        </div>
     </div>
+    <div class="container--notepad" id="technologie">
+        <img src="./images/notepad.png" alt="Bloc note">
+        <div class="container--notepad-text">Je posséde multiples technologies dans mes cordes mêmes si je reste open
+            sur le choix de celle ci: <br>
+            <ul>
+                <li>
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Vue</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>sql</li>
+                        <li>noSql</li>
+                    </ul>
+                </li>
+        </div>
+    </div>
+    <div class="container--notepad" id="projet">
+        <img src="./images/notepad.png" alt="Bloc note">
+        <div class="container--notepad-text">Je suis le texte des projets</div>
+    </div>
+
     <script src="./main.js"></script>
 </body>
 
